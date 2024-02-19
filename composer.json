@@ -1,0 +1,31 @@
+{
+  "name": "emedia/multi-tenant",
+  "description": "Add multi-tenant handling on a single database with shared clients",
+  "type": "project",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0",
+    "illuminate/database": "^10.0"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Shane Perera",
+      "email": "shane@shaneperera.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "EMedia\\MultiTenant\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EMedia\\MultiTenant\\MultiTenantServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
